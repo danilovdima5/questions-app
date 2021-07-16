@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
+    <title>PodcastsApp</title>
+</head>
+<body>
+    <button class="mui-btn mui-btn--fab mui-btn--accent floating-btn" id="mainBtn">Все</button>
+    <div id="sidebar">
+        <div class="mui--text-light mui--text-display1 mui--align-vertical">
+            Подкаст: вопросы<br>
+            <small class="author">by D. Danilov</small>
+        </div>
+    </div>
+    <div id="content" class="mui-container-fluid">
+        <div class="mui-row">
+            <div class="mui-col-sm-10 mui-col-sm-offset-1">
+                <br>
+                <br>
+                <div class="mui--text-dark-secondary mui--text-body2">Задай вопрос</div>
+                <div class="mui-divider"></div>
+                <br>
+                    <form class="mui-form" id="form">
+                        <div class="mui-textfield mui-textfield--float-label">
+                            <input type="text" id="questionInputBriefly" required minlength="15" maxlength="100">
+                            <label>Тема вопроса?</label>
+                        </div>
+                        <div class="mui-textfield mui-textfield--float-label">
+                            <input type="text" id="questionInputDetailed">
+                            <label>Введите описание вопроса</label>
+                        </div>
+                        <button type="submit" class="mui-btn mui-btn--raised" id="submitButton" disabled>Задать вопрос</button>
+                    </form>
+                <br>
+                <br>
+                <div class="mui--text-dark-secondary mui--text-body2">Ваши вопросы</div>
+                <div class="mui-divider"></div>
+                <br>
+                <div id="list"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
